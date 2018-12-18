@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import pic from './1.jpg';
 import './App.css';
-// import {Grid,Row,Col} from 'react-bootstrap';
+import {Grid,Row,Col} from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -17,15 +17,19 @@ class App extends Component {
   render() {
     return (
     
-<div className="fadeIn">
+<Grid fluid="true" className="fadeIn">
+  <Row className="show-grid">
+    <Col xs={12} md={6}>
     <div className="image">
       <img src={pic} className="pic" alt="" /> 
       </div>
-      <div className="text">
-      <div className="head">
-        <b>Under Construction</b>
-        <p>This website is currently undergoing scheduled maintenance & development. Should be back shortly.</p>
-      </div> 
+    </Col>
+    <Col xs={12} md={6}>
+    <div className="text">
+        <div className="head">
+          <b>Under Construction</b>
+          <p>This website is currently undergoing scheduled maintenance & development. Should be back shortly.</p>
+        </div> 
       <div className="extra">
       <ul>
         <li>
@@ -60,8 +64,13 @@ class App extends Component {
       </ul>
       </div>
 </div>
+    </Col>
+  </Row>
+  </Grid>
+    
+     
 
- </div>
+
       
     );
   }
