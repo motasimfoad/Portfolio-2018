@@ -80,7 +80,6 @@ p{
   font-weight: inherit;
 }
 .extra{
-  /* padding-top: 150px; */
   font-size: 16px;
   line-height: 30px;
 }
@@ -125,7 +124,6 @@ ul li a{
   border-radius: 50%;
   font-size: 16px;
   color: #3b5998;
-  /* transition: .5s; */
 }
 .git{
   color: #2dba4e;

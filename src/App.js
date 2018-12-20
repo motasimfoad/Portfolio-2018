@@ -73,11 +73,6 @@ class App extends Component {
     </Col>
   </Row>
 </Grid>
-    
-     
-
-
-      
     );
   }
 }
