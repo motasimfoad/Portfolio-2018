@@ -120,10 +120,10 @@ ul li a{
   display: block;
   text-align: center;
   line-height: 30px;
-  box-shadow: 0 0 0 2px #3b5998;
+  box-shadow: 0 0 0 2px #8b9dc3;
   border-radius: 50%;
   font-size: 16px;
-  color: #3b5998;
+  color: #8b9dc3;
 }
 .git{
   color: #2dba4e;
