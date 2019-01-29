@@ -17,11 +17,11 @@ class App extends Component {
   render() {
     return (
     
-<Grid fluid="true" className="fadeIn">
+<Grid fluid="true" className="fadeIn authMain">
   <Row className="show-grid">
     <Col xs={12} md={6}>
     <div className="image">
-      <img src={pic} className="pic" alt="" /> 
+      <img src={pic} className="pic" alt="Motasim Foad" /> 
       </div>
     </Col>
     <Col xs={12} md={6}>
