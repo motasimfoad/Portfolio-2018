@@ -2,14 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  background-color: #282c34;
+  background: url('http://i.imgur.com/iZpuNB3.gif') no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,17 +12,62 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* filter: blur(.3px);
+  -webkit-filter: blur(.3px); */
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size : 18px;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+ul:hover li a {
+  transform: scale(1.5);
+  opacity : .2;
+  filter: blur(5px);
+}
+
+ul li a:hover {
+  transform: scale(2);
+  opacity : 1;
+  filter: blur(0px);
+}
+
+ul li a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff497c;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+ul li a:hover:before{
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(1);
 }
